@@ -358,7 +358,7 @@ function initEvolution() {
   const evoTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".evolution-wrap",
-      start: isMobile ? "top 80%" : "top 30%",
+      start: isMobile ? "top bottom" : "top 30%",
       end: "bottom bottom",
       toggleActions: "play none none none",
     },
@@ -382,7 +382,7 @@ function initEvolution() {
   const evoTl2 = gsap.timeline({
     scrollTrigger: {
       trigger: ".evolution-wrap",
-      start: isMobile ? "top 70%" : "20% top",
+      start: isMobile ? "top bottom" : "20% top",
       end: "80% bottom",
       scrub: 1,
     },
@@ -400,7 +400,7 @@ function initEvolution() {
   const evoTl3 = gsap.timeline({
     scrollTrigger: {
       trigger: ".evolution-wrap",
-      start: isMobile ? "top 60%" : "50% top",
+      start: isMobile ? "top bottom" : "50% top",
       end: "bottom bottom",
       toggleActions: "play none none none",
     },
@@ -490,7 +490,7 @@ function initMilestoneRes() {
   const msTl2 = gsap.timeline({
     scrollTrigger: {
       trigger: ".milestone-sticky",
-      start: "top 85%",
+      start: "top bottom",
       end: "bottom bottom",
       toggleActions: "play none none none",
     },
@@ -512,7 +512,7 @@ function initMilestoneRes() {
   const msTl3 = gsap.timeline({
     scrollTrigger: {
       trigger: ".milestone-sticky",
-      start: "top 60%",
+      start: "top bottom",
       end: "bottom bottom",
       toggleActions: "play none none none",
     },
@@ -654,7 +654,7 @@ function initAnatomyRes() {
   const preAnaTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".anatomy-wrapper",
-      start: "top 85%",
+      start: "top bottom",
       end: "bottom bottom",
       toggleActions: "play none none reverse",
     },
@@ -668,7 +668,7 @@ function initAnatomyRes() {
   const anaTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".anatomy-wrapper",
-      start: "top 70%",
+      start: "top bottom",
       end: "bottom bottom",
       scrub: 1,
     },
@@ -693,7 +693,7 @@ function initAnatomyRes() {
     .timeline({
       scrollTrigger: {
         trigger: ".anatomy-wrapper",
-        start: "top 50%",
+        start: "top bottom",
         end: "bottom bottom",
         toggleActions: "play none none reverse",
       },
@@ -726,7 +726,7 @@ function initFillings() {
   const flTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".fl-wrapper",
-      start: isMobile ? "top 80%" : "top 10%",
+      start: "top bottom",
       end: "bottom bottom",
       toggleActions: "play none none reverse",
     },
@@ -808,7 +808,7 @@ function initFillings() {
   const flTl3 = gsap.timeline({
     scrollTrigger: {
       trigger: ".fl-wrapper",
-      start: isMobile ? "top 40%" : "60% 50%",
+      start: isMobile ? "top bottom" : "60% 50%",
       end: "bottom bottom",
       toggleActions: "play none none reverse",
     },
@@ -886,7 +886,7 @@ function initStreetRes() {
   const streetTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".street",
-      start: "top 80%",
+      start: "top bottom",
       end: "100% 60%",
       scrub: 1,
     },
