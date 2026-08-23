@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drinaturals - 100% Natural Dehydrated Fruits</title>
+    <link rel="icon" href="img/main-logo.png" type="image/png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/main-logo.png" />
+    <link
+      rel="preload"
+      as="image"
+      href="img/main-logo.png"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;700&family=Poppins:wght@400;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GSAP -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"
+    ></script>
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <!-- Lenis scroll -->
+    <script
+      defer
+      src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"
+    ></script>
+    <!-- Icon -->
+    <link
+      rel="preload"
+      as="style"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+      onload="this.onload = null; this.rel = 'stylesheet';"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    /></noscript>
+    <link
+      rel="preload"
+      as="style"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+      onload="this.onload = null; this.rel = 'stylesheet';"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    /></noscript>
+    <script>
+      history.scrollRestoration = "manual";
+    </script>
+    <!-- JS -->
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Progress bar -->
+      <div class="progress-bar"></div>
+      <!-- Nav mobile -->
+      <nav class="navmobile-wrap">
+        <div class="navmobile">
+          <a href="#hero">Top</a>
+          <a href="#evolution">Story</a>
+          <a href="#anatomy">Fruits</a>
+          <a href="#fillings">Products</a>
+          <a href="#street">Stockists</a>
+        </div>
+        <p>Close</p>
+      </nav>
+      <!-- Floating menu -->
+      <div class="fixed-menu">
+        <div class="menu-mobile on-desktop">Menu</div>
+      </div>
+      <!-- Preload -->
+      <section class="preload">
+        <div class="preload-wrap">
+          <div class="bg-circle"></div>
+          <div class="preload-content">
+            <h1>Healthy</h1>
+            <h1>Natural</h1>
+            <h1>Irresistible</h1>
+          </div>
+        </div>
+      </section>
+      <!-- Hero -->
+      <section class="hero" id="hero">
+        <div class="hero-top">
+          <a href="#evolution" class="navlink">Story</a>
+          <a href="#anatomy" class="navlink">Fruits</a>
+          <h1 class="hero-tag">#TheTasteOfNature</h1>
+          <a href="#fillings" class="navlink">Products</a>
+          <a href="#street" class="navlink">Stockists</a>
+          <div class="menu-mobile">Menu</div>
+        </div>
+
+        <div class="hero-mid">
+          <!-- image center -->
+          <div class="hero-img">
+            <img
+              loading="eager"
+              fetchpriority="high"
+              id="bmMain"
+              src="img/main-logo.png"
+              alt="Drinaturals Logo"
+            />
+          </div>
+          <div class="hero-text-bottom">
+            <h1 class="hero-h1">DRI</h1>
+            <h1 class="hero-h1">NATRUALS</h1>
+          </div>
+        </div>
+
+        <div class="hero-bottom">
+          <p class="hero-b1">/dri-nat-u-rals/ (brand)</p>
+          <p class="hero-b2">
+            More than just a snack, Drinaturals is your family's go-to
+            for 100% natural dehydrated fruits. Clean, wholesome, and
+            delicious — feel the difference with every bite.
+          </p>
+          <div class="hero-b3">
+            <p>Discover the crunch</p>
+            <i id="heroIcon" class="ph-fill ph-arrow-down"></i>
+          </div>
+        </div>
+      </section>
+      <div class="spacer"></div>
+
+      <!-- Evolution / Brand Story -->
+      <div class="evolution-wrap" id="evolution">
+        <div class="evo-container">
+          <section class="evolution">
+            <div class="evo-wrap">
+              <h1>The Story of Drinaturals</h1>
+              <p>From a kitchen experiment to your family's favourite snack</p>
+            </div>
+            <!-- 6 images behind -->
+            <div class="evo-imgs">
+              <div class="evo-img-wrap">
+                <img loading="lazy" class="evo-img" src="img/story-1.jpg" alt="Our beginning" />
+              </div>
+              <div class="evo-img-wrap">
+                <img loading="lazy" class="evo-img" src="img/story-2.jpg" alt="Clean label" />
+              </div>
+              <div class="evo-img-wrap">
+                <img loading="lazy" class="evo-img" src="img/story-3.jpg" alt="Dehydration process" />
+              </div>
+              <div class="evo-img-wrap">
+                <img loading="lazy" class="evo-img" src="img/story-4.jpg" alt="Family friendly" />
+              </div>
+              <div class="evo-img-wrap">
+                <img loading="lazy" class="evo-img" src="img/story-5.jpg" alt="Versatile snacking" />
+              </div>
+              <div class="evo-img-wrap">
+                <img loading="lazy" class="evo-img" src="img/story-6.jpg" alt="Drinaturals" />
+              </div>
+            </div>
+          </section>
+          <!-- Milestone 1 -->
+          <section class="milestone" id="msTop">
+            <div class="ms-content">
+              <div class="ms-header">
+                <h2>The First Batch</h2>
+                <p>
+                  It all started with a simple idea — why not dehydrate the freshest
+                  fruits and make them available as a clean, healthy snack for everyone.
+                  Hand-selected, single-ingredient, and nothing else.
+                </p>
+              </div>
+              <img loading="lazy" src="img/story-1.jpg" alt="First batch" />
+            </div>
+            <div class="ms-img-wrap-border">
+              <img loading="lazy" src="img/filling-1.jpg" alt="Strawberry pack" />
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- Milestone 2 -->
+      <div class="milestone-sticky">
+        <section class="milestone row-reverse ms-sticky" id="ms2">
+          <div class="ms-content">
+            <div class="ms-header">
+              <h2>Market Launch</h2>
+              <p>
+                From local pop-ups and farmers' markets to being stocked at
+                specialty grocers like Le Marché in Islamabad and Shams.
+                Drinaturals quickly became a favourite among health-conscious families.
+              </p>
+            </div>
+            <img loading="lazy" src="img/story-2.jpg" alt="Market launch" />
+          </div>
+          <div class="ms-img-wrap-border">
+            <img loading="lazy" src="img/filling-2.jpg" alt="Apple pack" />
+          </div>
+        </section>
+        <!-- Milestone 3 -->
+        <section class="milestone ms-sticky" id="ms3">
+          <div class="ms-content">
+            <div class="ms-header">
+              <h2>Growing Family</h2>
+              <p>
+                With demand growing, Drinaturals expanded its range — from strawberries
+                and apples to mangoes, bananas, citrus slices, and mixed fruit packs.
+                Available direct-to-consumer via Instagram and at select retailers.
+              </p>
+            </div>
+            <img loading="lazy" src="img/story-3.jpg" alt="Growing" />
+          </div>
+          <div class="ms-img-wrap-border">
+            <img loading="lazy" src="img/filling-6.jpg" alt="Mixed pack" />
+          </div>
+        </section>
+      </div>
+      <!-- Spacer -->
+      <div class="spacer"></div>
+      <!-- Anatomy / Fruits -->
+      <div class="anatomy-wrapper">
+        <div class="anatomy-container">
+          <!-- pre -->
+          <section class="pre-anatomy" id="anatomy">
+            <h1>
+              Discover the delicate balance of flavour and nutrition that
+              makes Drinaturals the perfect natural snack
+            </h1>
+            <div class="pre-img">
+              <img loading="lazy" src="img/preanatomy.jpg" alt="Our fruits" />
+            </div>
+          </section>
+          <!-- main -->
+          <section class="anatomy">
+            <div class="ana-wrap">
+              <div class="ana-row">
+                <div class="ana-img-wrap">
+                  <img loading="lazy" src="img/icon-strawberry.svg" alt="Strawberry" />
+                </div>
+                <h1 class="ana-h1">Our Fruits</h1>
+                <div class="ana-img-wrap is-right">
+                  <img loading="lazy" src="img/icon-apple.svg" alt="Apple" />
+                </div>
+              </div>
+
+              <div class="ana-mid">
+                <div class="ana-list" id="list1">
+                  <p>Strawberries</p>
+                  <p>Apples</p>
+                  <p>Mangoes</p>
+                  <p>Bananas</p>
+                  <p>Oranges</p>
+                  <p>Mixed Pack</p>
+                </div>
+                <div class="ana-banhmi">
+                  <img
+                    loading="lazy"
+                    id="startRed"
+                    src="img/star-green.svg"
+                    alt="Star green"
+                  />
+                  <img
+                    loading="lazy"
+                    id="anabm"
+                    src="img/anatomy-center.jpg"
+                    alt="Drinaturals assortment"
+                  />
+                </div>
+                <div class="ana-list" id="list2">
+                  <p>No Sugar</p>
+                  <p>No Preservatives</p>
+                  <p>No Artificial Colours</p>
+                  <p>No Additives</p>
+                  <p>Single Ingredient</p>
+                  <p>100% Natural</p>
+                </div>
+              </div>
+
+              <div class="ana-row">
+                <div class="ana-img-wrap">
+                  <img loading="lazy" src="img/icon-mango.svg" alt="Mango" />
+                </div>
+                <h1 class="ana-h1">Drinaturals</h1>
+                <div class="ana-img-wrap is-right">
+                  <img loading="lazy" src="img/icon-orange.svg" alt="Orange" />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- Fillings / Products -->
+      <div class="fl-wrapper">
+        <div class="fl-container">
+          <section class="fillings" id="fillings">
+            <div class="fillings-wrap">
+              <div class="fillings-content">
+                <!-- top -->
+                <h1>Types of</h1>
+                <div class="fillings-bg">
+                  <img loading="eager" src="img/filling-1.jpg" alt="Strawberry" />
+                </div>
+              </div>
+              <!-- mid -->
+              <div class="fillings-content row-reverse">
+                <h1>Drinaturals</h1>
+                <div class="fillings-bg">
+                  <img loading="eager" src="img/filling-2.jpg" alt="Apple" />
+                </div>
+              </div>
+              <!-- bottom -->
+              <div class="fillings-content">
+                <h1>Fruit Packs</h1>
+                <div class="fillings-bg">
+                  <img loading="eager" src="img/filling-3.jpg" alt="Mango" />
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Slide -->
+          <section class="fl-carousel">
+            <div class="fl-wrap">
+              <p>
+                From standalone snacking to yogurt toppings and drink infusions —
+                Drinaturals fits every moment of your day
+              </p>
+              <div class="fl-slide-wrap">
+                <!-- curve top -->
+                <img loading="eager" id="curveTop" src="img/Half circle top.svg" alt="curve" />
+                <!-- carousel -->
+                <div class="fl-slide">
+                  <div class="fl-img">
+                    <img loading="eager" src="img/filling-1.jpg" alt="Strawberry pack" />
+                  </div>
+                  <div class="fl-img">
+                    <img loading="eager" src="img/filling-2.jpg" alt="Apple pack" />
+                  </div>
+                  <div class="fl-img">
+                    <img loading="eager" src="img/filling-3.jpg" alt="Mango pack" />
+                  </div>
+                  <div class="fl-img">
+                    <img loading="eager" src="img/filling-4.jpg" alt="Banana pack" />
+                  </div>
+                  <div class="fl-img">
+                    <img loading="eager" src="img/filling-5.jpg" alt="Orange pack" />
+                  </div>
+                  <div class="fl-img">
+                    <img loading="eager" src="img/filling-6.jpg" alt="Mixed pack" />
+                  </div>
+                  <div class="fl-img">
+                    <img loading="eager" src="img/filling-7.jpg" alt="Berry pack" />
+                  </div>
+                  <div class="fl-img">
+                    <img loading="eager" src="img/filling-8.jpg" alt="Tropical pack" />
+                  </div>
+                </div>
+                <!-- curve bottom -->
+                <img loading="eager" id="curveBottom" src="img/Half circle bottom.svg" alt="curve" />
+              </div>
+              <!-- next & prev button -->
+              <div class="fl-btn">
+                <div class="btn" id="btnPrev">
+                  <i class="ph-fill ph-arrow-left"></i>
+                </div>
+                <div class="btn" id="btnNext">
+                  <i class="ph-fill ph-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- Spacer -->
+      <div class="spacer"></div>
+      <!-- Stockists / Retail -->
+      <section class="street" id="street">
+        <!-- content -->
+        <div class="st-wrap">
+          <div class="st-img-row">
+            <div class="st-image">
+              <img loading="eager" src="img/retail-1.jpg" alt="Le Marche" />
+            </div>
+            <div class="st-img-paper">
+              <img loading="eager" src="img/dish-1.jpg" alt="On yogurt" />
+            </div>
+          </div>
+          <div class="st-big-typo">
+            <h1 id="h1BigTypo">
+              Drinaturals can easily be found at select stockists and pop-ups
+            </h1>
+            <h1>
+              Drinaturals can easily be found at select stockists and pop-ups
+            </h1>
+          </div>
+          <div class="st-img-row">
+            <div class="st-img-paper paper-bottom">
+              <img loading="eager" src="img/dish-smoothie.jpg" alt="In smoothie" />
+            </div>
+            <div class="st-image">
+              <img loading="eager" src="img/retail-2.jpg" alt="Shams" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Spacer -->
+      <div class="spacer"></div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Corner fruit decorations -->
+      <div class="ft-img-top">
+        <img loading="eager" src="img/footer-top.png" alt="fruit" />
+      </div>
+      <div class="ft-img-bottom">
+        <img loading="eager" src="img/footer-bottom.png" alt="fruit" />
+      </div>
+
+      <!-- Main centered content -->
+      <div class="ft-content">
+        <h1 class="ft-brand-title">DRINATURALS</h1>
+        <h2 class="ft-brand-subtitle">Natural Dehydrated Fruits</h2>
+
+        <!-- Dried fruit on paper -->
+        <div class="ft-paper-img">
+          <img loading="lazy" src="img/filling-3.jpg" alt="Dehydrated mango" />
+        </div>
+
+        <!-- Script tagline -->
+        <p class="ft-tagline">From the Orchards of Islamabad to Your Home.</p>
+
+        <!-- Logo and location -->
+        <div class="ft-logo-section">
+          <img loading="lazy" class="ft-logo-icon" src="img/main-logo.png" alt="Drinaturals Logo" />
+          <p class="ft-logo-brand">DRINATURALS</p>
+          <p class="ft-location">ISLAMABAD, PAKISTAN</p>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="ft-author">
+        <p>&copy; 2026 Drinaturals. All rights reserved.</p>
+        <a href="https://www.instagram.com/" target="_blank"><p>@drinaturals</p></a>
+        <a href="#hero"><p>Go to top</p></a>
+      </div>
+    </footer>
+  </body>
+</html>

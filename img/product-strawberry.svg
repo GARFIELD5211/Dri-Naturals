@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400" viewBox="0 0 300 400">
+  <rect width="300" height="400" rx="20" fill="#f5ecd7"/>
+  <circle cx="150" cy="160" r="80" fill="#bc4749" opacity="0.9"/>
+  <circle cx="135" cy="145" r="8" fill="#f5ecd7" opacity="0.3"/>
+  <circle cx="160" cy="155" r="6" fill="#f5ecd7" opacity="0.3"/>
+  <circle cx="145" cy="170" r="7" fill="#f5ecd7" opacity="0.3"/>
+  <path d="M140 100 Q150 80 160 100" fill="#6a994e" stroke="none"/>
+  <text x="150" y="290" font-family="sans-serif" font-size="18" font-weight="bold" fill="#333" text-anchor="middle">Strawberries</text>
+  <text x="150" y="320" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">Crunchy &amp; Tangy</text>
+</svg>

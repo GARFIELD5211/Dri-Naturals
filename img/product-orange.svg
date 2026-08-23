@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400" viewBox="0 0 300 400">
+  <rect width="300" height="400" rx="20" fill="#f5ecd7"/>
+  <circle cx="150" cy="160" r="80" fill="#e8a64a" opacity="0.9"/>
+  <circle cx="150" cy="160" r="45" fill="none" stroke="#f5ecd7" stroke-width="2" opacity="0.4"/>
+  <circle cx="150" cy="160" r="15" fill="#f5ecd7" opacity="0.2"/>
+  <text x="150" y="290" font-family="sans-serif" font-size="18" font-weight="bold" fill="#333" text-anchor="middle">Oranges</text>
+  <text x="150" y="320" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">Citrus Slices</text>
+</svg>
