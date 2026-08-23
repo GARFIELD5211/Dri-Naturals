@@ -1498,6 +1498,35 @@ section {
     height: 3rem;
   }
 
+  .evolution-wrap {
+    height: 150vh;
+  }
+
+  .evo-container {
+    height: 100vh;
+  }
+
+  .anatomy-wrapper {
+    height: 200vh;
+  }
+
+  .fl-wrapper {
+    height: 150vh;
+  }
+
+  .fl-container {
+    height: 100vh;
+  }
+
+  .milestone {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .milestone-sticky {
+    height: auto;
+  }
+
   .navlink {
     display: none;
   }
