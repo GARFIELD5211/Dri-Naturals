@@ -383,7 +383,7 @@ function initEvolution() {
     scrollTrigger: {
       trigger: ".evolution-wrap",
       start: isMobile ? "top bottom" : "20% top",
-      end: "80% bottom",
+      end: isMobile ? "30% top" : "80% bottom",
       scrub: 1,
     },
   });
@@ -669,7 +669,7 @@ function initAnatomyRes() {
     scrollTrigger: {
       trigger: ".anatomy-wrapper",
       start: "top bottom",
-      end: "bottom bottom",
+      end: "40% top",
       scrub: 1,
     },
   });
@@ -768,8 +768,8 @@ function initFillings() {
   const flTl2 = gsap.timeline({
     scrollTrigger: {
       trigger: ".fl-wrapper",
-      start: "top top",
-      end: "bottom bottom",
+      start: isMobile ? "top bottom" : "top top",
+      end: isMobile ? "30% top" : "bottom bottom",
       scrub: 1,
     },
   });
