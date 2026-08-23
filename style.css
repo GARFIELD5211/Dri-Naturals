@@ -1499,26 +1499,38 @@ section {
   }
 
   .evolution-wrap {
-    height: 200vh;
+    height: auto;
   }
 
   .evo-container {
-    height: 100vh;
+    position: relative;
+    height: auto;
   }
 
   .anatomy-wrapper {
-    height: 300vh;
+    height: auto;
+  }
+
+  .anatomy-container {
+    position: relative;
+    height: auto;
   }
 
   .fl-wrapper {
-    height: 200vh;
+    height: auto;
   }
 
   .fl-container {
-    height: 100vh;
+    position: relative;
+    height: auto;
   }
 
   .milestone-sticky {
+    height: auto;
+  }
+
+  .milestone-sticky .milestone {
+    position: relative;
     height: auto;
   }
 
@@ -1536,6 +1548,25 @@ section {
 
   .evo-imgs {
     display: none;
+  }
+
+  .anatomy {
+    position: relative;
+    height: auto;
+    clip-path: none;
+  }
+
+  .pre-anatomy {
+    height: auto;
+  }
+
+  .pre-anatomy h1 {
+    width: 100%;
+  }
+
+  .pre-img {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .ms-content {
