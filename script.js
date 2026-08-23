@@ -353,18 +353,17 @@ function initEvolution() {
   const evoPST = glbSplitText(evoP);
 
   const evoImgs = document.querySelectorAll(".evo-img");
-  const isMobile = window.innerWidth < 992;
 
   const evoTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".evolution-wrap",
-      start: isMobile ? "top bottom" : "top 30%",
+      start: "top 30%",
       end: "bottom bottom",
       toggleActions: "play none none none",
     },
   });
 
-  if (!isMobile) {
+  if (window.innerWidth >= 601) {
     evoTl.fromTo(
       evoImgs,
       { clipPath: "inset(50% 50% 50% 50%)" },
@@ -382,8 +381,8 @@ function initEvolution() {
   const evoTl2 = gsap.timeline({
     scrollTrigger: {
       trigger: ".evolution-wrap",
-      start: isMobile ? "top bottom" : "20% top",
-      end: isMobile ? "30% top" : "80% bottom",
+      start: "20% top",
+      end: "80% bottom",
       scrub: 1,
     },
   });
@@ -400,7 +399,7 @@ function initEvolution() {
   const evoTl3 = gsap.timeline({
     scrollTrigger: {
       trigger: ".evolution-wrap",
-      start: isMobile ? "top bottom" : "50% top",
+      start: "50% top",
       end: "bottom bottom",
       toggleActions: "play none none none",
     },
@@ -490,7 +489,7 @@ function initMilestoneRes() {
   const msTl2 = gsap.timeline({
     scrollTrigger: {
       trigger: ".milestone-sticky",
-      start: "top bottom",
+      start: "top 50%",
       end: "bottom bottom",
       toggleActions: "play none none none",
     },
@@ -512,7 +511,7 @@ function initMilestoneRes() {
   const msTl3 = gsap.timeline({
     scrollTrigger: {
       trigger: ".milestone-sticky",
-      start: "top bottom",
+      start: "40% 50%",
       end: "bottom bottom",
       toggleActions: "play none none none",
     },
@@ -654,7 +653,7 @@ function initAnatomyRes() {
   const preAnaTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".anatomy-wrapper",
-      start: "top bottom",
+      start: "top 50%",
       end: "bottom bottom",
       toggleActions: "play none none reverse",
     },
@@ -668,8 +667,8 @@ function initAnatomyRes() {
   const anaTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".anatomy-wrapper",
-      start: "top bottom",
-      end: "40% top",
+      start: "20% top",
+      end: "bottom bottom",
       scrub: 1,
     },
   });
@@ -693,7 +692,7 @@ function initAnatomyRes() {
     .timeline({
       scrollTrigger: {
         trigger: ".anatomy-wrapper",
-        start: "top bottom",
+        start: "50% 20%",
         end: "bottom bottom",
         toggleActions: "play none none reverse",
       },
@@ -721,12 +720,10 @@ function initFillings() {
 
   const flTextST = glbSplitText(flText);
 
-  const isMobile = window.innerWidth < 992;
-
   const flTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".fl-wrapper",
-      start: "top bottom",
+      start: "top 10%",
       end: "bottom bottom",
       toggleActions: "play none none reverse",
     },
@@ -768,8 +765,8 @@ function initFillings() {
   const flTl2 = gsap.timeline({
     scrollTrigger: {
       trigger: ".fl-wrapper",
-      start: isMobile ? "top bottom" : "top top",
-      end: isMobile ? "30% top" : "bottom bottom",
+      start: "top top",
+      end: "bottom bottom",
       scrub: 1,
     },
   });
@@ -808,7 +805,7 @@ function initFillings() {
   const flTl3 = gsap.timeline({
     scrollTrigger: {
       trigger: ".fl-wrapper",
-      start: isMobile ? "top bottom" : "60% 50%",
+      start: "60% 50%",
       end: "bottom bottom",
       toggleActions: "play none none reverse",
     },
@@ -886,8 +883,8 @@ function initStreetRes() {
   const streetTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".street",
-      start: "top bottom",
-      end: "100% 60%",
+      start: "top 40%",
+      end: "100% 80%",
       scrub: 1,
     },
   });
